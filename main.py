@@ -21,7 +21,7 @@ def bc_metrics(true, predict):
     return precision, recall, f1, accuracy
 
 
-def task3():
+if __name__ == "__main__":
     x_train, y_train, x_test, y_test = load_mnist("data")
     x_train, x_test = prepare_for_neural_network(x_train, x_test)
     x_train, y_train, x_val, y_val = random_split_train_val(
